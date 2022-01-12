@@ -1,0 +1,28 @@
+//breakpoints 
+@mixin breakPoints($arg...) {
+    @if length($arg) == 1 {
+        @media screen and (max-width: nth($arg, 1)){
+            @content;
+        }
+    } @if length($arg) == 2 {
+        @media screen and (max-width: nth($arg, 1) ) and (min-width: nth($arg, 2)){
+            @content;
+        }
+    }
+}
+
+//hover
+@mixin hoverOpacity{
+    opacity: .4;
+}
+
+//z-index
+@function z($layer) {
+    @if not map-has-key($z-indexes, $layer) {
+      @error 'There is no layer named `#{$layer}` in $z-indexes. '
+           + 'Layer should be one of #{map-keys($z-indexes)}.';
+    }
+  
+    @return map-get($z-indexes, $layer);
+  }
+

@@ -1,0 +1,59 @@
+
+header{
+    padding: 0 !important;
+    font-family: $lato;
+
+   
+   
+}
+
+.changeColor{
+    background: linear-gradient(141deg, #43a35b 0%, #339b44 21%, #ffffff 50%);
+}
+
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 800;
+
+    .logo{
+        text-decoration: none;
+        color: $fernfrond;
+    }
+}
+
+nav{
+    margin: 1rem 0;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    font-family: $lato;
+    font-weight: 700;
+    color: $scorpion !important;
+    
+}
+
+.nav-link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease-in-out, background-color .5s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    background: $sushi;
+
+}
+
+.hamburger{
+    button{
+        margin-left: auto !important;
+    }
+}
+
+

@@ -1,17 +1,21 @@
 main{
+
     img{
         width: 100%;
     }
+}
 
-    h1{
-        font-family: $rubik;
-        font-size: 60px;
-        color: $kelp;
+.main__container{
+  
+  h1{
+    font-family: $rubik;
+    font-size: 60px;
+    color: $kelp;
 
-        @include breakPoints(992px){
-            font-size: 45px;
-        }
+    @include breakPoints(992px){
+        font-size: 45px;
     }
+  }
 
 }
 
@@ -46,6 +50,11 @@ main{
     }
 }
 
+.hamburger{
+  h5{
+    font-weight: 700;
+  }
+}
 //slide show container
 .slideshow-container {
     max-width: 1000px;
@@ -95,18 +104,18 @@ main{
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .5} 
+    from {opacity: .6} 
     to {opacity: 1}
   }
   
   @keyframes fade {
-    from {opacity: .5} 
+    from {opacity: .6} 
     to {opacity: 1}
   }
   
   /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
+  // @media only screen and (max-width: 300px) {
+  //   .text {font-size: 11px}
+  // }
 
  

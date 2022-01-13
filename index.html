@@ -20,7 +20,7 @@
         <div class="navbar-brand text-center">
             <a href="" class="logo">café.tea.ria</a>
         </div>
-        <nav class="d-flex justify-content-center"> 
+        <nav class="d-flex justify-content-center "> 
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                   <a class="nav-link" href="#whatsnew">What's new</a>
@@ -69,27 +69,20 @@
         <div class="container-fluid text-center main__container">
             <div class="container" id="header" >
                 <h1>Grab a cup today!</h1>
-                <div class="container slideshow">
-              
+                <div class="container slideshow">              
                     <div class="slideshow-container">
                         <div class="mySlides fade">
-                          <img src="assets/images/milk2.jpg" style="width:100%">
-                          <!-- <div class="text">Caption Text</div> -->
+                          <img src="assets/images/milk2.jpg" style="width:100%">                    
                         </div>
-
                         <div class="mySlides fade">
                           <img src="assets/images/milk1.jpg" style="width:100%">
                           <!-- <div class="text">Caption Two</div> -->
                         </div>  
-
                         <div class="mySlides fade">
                           <img src="assets/images/milkteas.jpg" style="width:100%">
-                          <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        
+                        </div>                      
                     </div>
-                    <br>
-                        
+                    <br>                        
                     <div style="text-align:center">
                         <span class="dot"></span> 
                         <span class="dot"></span> 
@@ -100,39 +93,65 @@
         </div>
 
        <section id="whatsnew" class="container-fluid whats-new">
-           <div class="container">
-                <div class="hotdeals row">
-                    <div class="text-center">
+           <div class="container whats-new__container">
+                <div class="hotdeals row whats-new__container-row">
+                    <div class="text-center whats_new-heading">
                         <h2>Hot deals</h2>
+                        <hr>
                     </div>
-                    <div class="col col-lg-6">
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
                         <img src="assets/images/whats new/hotdeals.jpg" alt="hotdeals">
                     </div>
-                    <div class="col col-lg-6">
-                            <div>
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="details">
                                 <h6>Here's a holiday extended treat for our Food Panda customers…</h6>
                                 <p>Promo runs from January 1-31,2022…</p>
                                 <p>So what are you waiting for? Tap it now…!!!</p>
                             </div>
                     </div>
                 </div>
-                <div class="best-seller row">
-                    <div class="text-center">
+                <div class="best-seller row whats-new__container-row">
+                    <div class="text-center whats_new-heading">
                         <h2>Best Seller</h2>
+                        <hr>
                     </div>
-                    <div class="col col-lg-6">
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
                         <img src="assets/images/whats new/most sold.jpg" alt="best seller">
                     </div>
-                    <div class="col col-lg-6">
-                        <h6>The perfectly brewed tea with rich creamy taste of Taro is what makes it one of the “Best Sellers”…</h6>
-                        <p>Grab a cup today or have it delivered right at your doorstep</p>
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="details">
+                            <h6>The perfectly brewed tea with rich creamy taste of Taro is what makes it one of the “Best Sellers”…</h6>
+                            <p>Grab a cup today or have it delivered right at your doorstep</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="new-product row whats-new__container-row">
+                    <div class="text-center whats_new-heading">
+                        <h2>New Product</h2>
+                        <hr>
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+                        <img src="assets/images/whats new/new product.jpg" alt="new product">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="details">
+                            <h6>Be tea-rrific with these refreshing drinks!!!</h6>
+                            <p> Mango Passion Fruit Tea and Strawberry Yakult Milk Tea is something that you wouldn't wanna miss….</p>
+                        </div>
                     </div>
                 </div>
             </div>    
        </section>
-
-
     </main>
+    <footer class="container-fluid">
+        <div class="footer__container container">
+            <div class="row">
+                <div>neil dc</div>
+            </div>
+        </div>
+    </footer>
+
+    
 
     
 
@@ -140,7 +159,8 @@
 
 
 
-   
+    <span style="display:none">coded by neil edward dela cruz</span>
+
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

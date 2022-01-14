@@ -1,5 +1,4 @@
 
-
 //slideshow
 var slideIndex = 0;
 showSlides();
@@ -21,4 +20,19 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-//try
+//page load transition smooth
+$(document).ready(function() {
+  $("body").css("display", "none");
+
+  $("body").fadeIn(2000);
+
+  $("a.transition").click(function(event){
+      event.preventDefault();
+      linkLocation = this.href;
+      $("body").fadeOut(1000, redirectPage);      
+  });
+       
+  function redirectPage() {
+      window.location = linkLocation;
+  }
+});

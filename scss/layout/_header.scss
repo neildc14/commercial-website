@@ -46,6 +46,16 @@ nav{
 
 }
 
+.active_link:after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 100% !important;
+    background: lighten($citron, 10%);
+
+}
+
 .hamburger{
     button{
         margin-left: auto !important;

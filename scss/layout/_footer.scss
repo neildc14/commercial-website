@@ -1,4 +1,10 @@
 footer{
-    height: 5vh;
-    background:$greenhouse;
+    height: auto;
+    padding: 1rem 0;
+    background: darken($greenhouse, 5%);
+
+    i{
+        color: white;
+        height:10px;
+    }
 }

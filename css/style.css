@@ -44,8 +44,22 @@ nav {
   background: #6CA431;
 }
 
+.active_link:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 100% !important;
+  background: #bcdb21;
+}
+
 .hamburger button {
   margin-left: auto !important;
+}
+
+html {
+  /*If you had a black or close to black background*/
+  background-color: whitesmoke;
 }
 
 main img {
@@ -170,7 +184,7 @@ main img {
   .whats-new__container img {
     max-width: 400px;
     max-height: 400px;
-    border: 1px solid #92958d;
+    border: 1px solid #d9d9d9;
   }
 }
 
@@ -181,9 +195,19 @@ main img {
 .whats_new-heading {
   padding: 3rem;
 }
+@media screen and (max-width: 992px) {
+  .whats_new-heading {
+    padding: 1rem;
+  }
+}
 .whats_new-heading h2 {
   font-size: 2.5rem;
   color: #40704a;
+}
+@media screen and (max-width: 992px) {
+  .whats_new-heading h2 {
+    font-size: 2rem;
+  }
 }
 
 .details {
@@ -206,6 +230,15 @@ main img {
 }
 
 footer {
-  height: 5vh;
-  background: #26430B;
+  height: auto;
+  padding: 1rem 0;
+  background: #1a2d07;
+}
+footer i {
+  color: white;
+  height: 10px;
+}
+
+.main {
+  height: 100vh;
 }

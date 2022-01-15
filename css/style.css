@@ -3,6 +3,10 @@
   box-sizing: border-box !important;
 }
 
+li {
+  list-style: none !important;
+}
+
 header {
   padding: 0 !important;
   font-family: "Lato", sans-serif;
@@ -229,23 +233,6 @@ main img {
   color: #7e9d2c;
 }
 
-footer {
-  height: auto;
-  padding: 1rem 0;
-  background: #1a2d07;
-}
-footer i {
-  color: white;
-  height: 10px;
-}
-footer h6 {
-  color: white !important;
-}
-
-.main {
-  height: 100vh;
-}
-
 .image__col {
   /* The Modal (background) */
   /* Modal Content (image) */
@@ -257,6 +244,11 @@ footer h6 {
 .image__col .myImg {
   cursor: pointer;
   transition: 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .image__col .myImg {
+    height: 310px;
+  }
 }
 .image__col .myImg:hover {
   opacity: 0.7;
@@ -289,17 +281,7 @@ footer h6 {
   width: 80%;
   max-width: 400px;
 }
-.image__col .caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-.image__col .modal-content, .image__col #caption {
+.image__col .modal-content, .image__col .caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -339,5 +321,44 @@ footer h6 {
 @media screen and (max-width: 1400px) and (min-width: 992px) {
   .image__col .card .card-img-top {
     height: 250px;
+  }
+}
+
+.food__header, .milktea__header, .hot-drinks__header {
+  color: #587708;
+}
+
+footer {
+  height: auto;
+  padding: 1rem 0;
+  background: #1a2d07;
+}
+footer .fa-phone-alt {
+  color: white;
+  height: 10px;
+}
+footer h6 {
+  color: white !important;
+}
+footer li {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .col__container {
+    text-align: center;
+  }
+}
+
+.footer__details {
+  gap: 10rem;
+}
+@media screen and (max-width: 992px) {
+  .footer__details {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

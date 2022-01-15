@@ -3,12 +3,34 @@ footer{
     padding: 1rem 0;
     background: darken($greenhouse, 5%);
 
-    i{
+    .fa-phone-alt{
         color: white;
         height:10px;
     }
 
     h6{
         color: white !important;
+       
+    }
+    
+    li{
+        padding: 0 !important;
+    }
+}
+
+.col__container{
+    @include breakPoints(992px){
+        text-align: center;
+    }
+}
+.footer__details{
+    gap: 10rem;
+
+    @include breakPoints(992px){
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

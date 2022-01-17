@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rubik&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/icons/logo.jpg">
     <title>café.tea.ria | Foods</title>
@@ -66,7 +67,7 @@
             </div>     -->
         </nav>         
     </header>
-    <main class="index__container">
+    <main class="main-container">
         <div class="container-fluid">
             <div class="food__header text-center pb-4">
                 <h2>Food Products</h2>
@@ -75,71 +76,56 @@
                 <div class="food__row row py-4">
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <img class="myImg card-img-top" src="../assets/images/foods/tofu.jpg" onclick="zoomImg()" alt="Seafood Tofu">
+                            <div class="overflow-hidden">
+                                <a href="../assets/images/foods/tofu.jpg"><img class="inner card-img-top" src="../assets/images/foods/tofu.jpg" alt="Seafood Tofu"></a>
+                            </div>
                             <div class="card-body">
                                 <h6 class="card-title">Seafood Tofu</h6>
                                 <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
-                            <div class="modal myModal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div class="caption"></div>
-                            </div>
                         </div>
                     </div>
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card"">
-                            <img class=" myImg card-img-top" src="../assets/images/foods/crab.jpg" onclick="zoomImg()" alt="Crab Claw">
+                            <div class="overflow-hidden">
+                                <a href="../assets/images/foods/crab.jpg"><img class="inner card-img-top" src="../assets/images/foods/crab.jpg" alt="Crab Claw"></a>
+                            </div>
                             <div class="card-body">
                                 <h6 class="card-title">Crab Claw</h6>
                                 <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
-                            <div  class="modal myModal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div class="caption"></div>
-                            </div>
                         </div>
                     </div>
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card" ">
-                            <img class="myImg card-img-top" src="../assets/images/foods/lobster.jpg"  onclick="zoomImg()" alt="Seafood Tofu">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <a href="../assets/images/foods/lobster.jpg"><img class="inner card-img-top" src="../assets/images/foods/lobster.jpg" alt="Seafood Tofu"></a>
+                            </div>
                             <div class="card-body">
                               <h6 class="card-title">Lobster Balls</h6>
                               <a href="#" class="btn  py-1 mt-2">Order</a>
                             </div>
-                            <div class="modal myModal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div id="caption"></div>
-                            </div>
                         </div>
                     </div>  
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card"">
-                            <img class="myImg card-img-top" src="../assets/images/foods/salmon.jpg"  onclick="zoomImg()" alt="Seafood Tofu">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <a href="../assets/images/foods/salmon.jpg"><img class="inner card-img-top" src="../assets/images/foods/salmon.jpg" alt="Seafood Tofu"></a>
+                            </div>
                             <div class="card-body">
                               <h6 class="card-title">Salmon Balls</h6>
                               <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
-                            <div  class="modal myModal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div id="caption"></div>
-                            </div>
                         </div>
                     </div>
-                    <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card"">
-                            <img class="myImg card-img-top" src="../assets/images/foods/scallops.jpg"  onclick="zoomImg()" alt="Seafood Tofu">
+                    <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <a href="../assets/images/foods/scallops.jpg"><img class="inner card-img-top" src="../assets/images/foods/scallops.jpg"  alt="Seafood Tofu"></a>
+                            </div>
                             <div class="card-body">
                               <h6 class="card-title">Salmon Balls</h6>
                               <a href="#" class="btn  py-1 mt-2">Order</a>
-                            </div>
-                            <div class="modal myModal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div id="caption"></div>
                             </div>
                         </div>
                     </div>      
@@ -197,45 +183,30 @@
     <span style="display:none">coded by neil edward dela cruz</span>
   
     <script>
-          
-    //zoom image
-    var modal = document.querySelector(".myModal");
-    var img = document.querySelector(".myImg");
-    var modalImg = document.querySelector(".modal-content");
-    //   var captionText = document.querySelector(".caption");
 
-    function zoomImg(){
-        modal.style.display = "block";
-        modalImg.src = img.src;
-        captionText.innerHTML = img.alt;
-        captionText.style.fontSize = "2rem";
-    }
-
-    var span = document.getElementsByClassName("close")[0];
-    
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
-    
     // //page load transition smooth
-    // $(document).ready(function() {
-    // $("body").css("display", "none");
+    $(document).ready(function() {
+    $("body").css("display", "none");
 
-    // $("body").fadeIn(2000);
+    $("body").fadeIn(2000);
 
-    // $("a.transition").click(function(event){
-    //     event.preventDefault();
-    //     linkLocation = this.href;
-    //     $("body").fadeOut(1000, redirectPage);      
-    // });
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);      
+    });
         
-    // function redirectPage() {
-    //     window.location = linkLocation;
-    // }
-    // });
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+    });
     
     
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+     </script>
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

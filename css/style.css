@@ -94,14 +94,18 @@ nav {
 
 main {
   background: #f8f8f8;
-  padding-top: 2rem;
 }
 main img {
   width: 100%;
 }
 
-.index__container {
+.main-container {
+  padding-top: 1.5rem;
   margin-top: 10rem !important;
+}
+
+.index__container {
+  margin-top: 7.1rem !important;
 }
 
 .main__container h1 {

@@ -94,9 +94,14 @@ nav {
 
 main {
   background: #f8f8f8;
+  padding-top: 2rem;
 }
 main img {
   width: 100%;
+}
+
+.index__container {
+  margin-top: 10rem !important;
 }
 
 .main__container h1 {

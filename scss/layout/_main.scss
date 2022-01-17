@@ -17,12 +17,15 @@
 
 main{
     background: lighten($whitesmoke, 1%);
-
+    padding-top: 2rem;
     img{
         width: 100%;
     }
 }
 
+.index__container{
+  margin-top: 10rem !important;
+}
 .main__container{
   
   h1{

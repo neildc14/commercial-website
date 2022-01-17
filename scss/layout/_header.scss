@@ -2,10 +2,23 @@
 header{
     padding: 0 !important;
     font-family: $lato;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
 
-   
-   
 }
+
+.slideUp {
+    transition: transform 0.3s ease-out;
+    transform: translateY(-150px);
+}
+
+.slideDown {
+    transition: transform 0.3s ease-in;
+    transform: translateY(0);
+} 
 
 .navbar-brand{
     font-size: 35px;

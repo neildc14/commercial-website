@@ -10,6 +10,21 @@ li {
 header {
   padding: 0 !important;
   font-family: "Lato", sans-serif;
+  z-index: 100000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+}
+
+.slideUp {
+  transition: transform 0.3s ease-out;
+  transform: translateY(-150px);
+}
+
+.slideDown {
+  transition: transform 0.3s ease-in;
+  transform: translateY(0);
 }
 
 .navbar-brand {
@@ -61,11 +76,25 @@ nav {
   margin-left: auto !important;
 }
 
-html {
-  /*If you had a black or close to black background*/
-  background-color: whitesmoke;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #92958d;
+}
+
+main {
+  background: #f8f8f8;
+}
 main img {
   width: 100%;
 }
@@ -233,27 +262,46 @@ main img {
   color: #7e9d2c;
 }
 
-.image__col {
-  /* The Modal (background) */
-  /* Modal Content (image) */
-  /* Caption of Modal Image */
-  /* Add Animation */
-  /* The Close Button */
-  /* 100% Image Width on Smaller Screens */
+.image__col .card {
+  width: 250px;
+  margin: 0 auto;
 }
-.image__col .myImg {
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+  .image__col .card .card-img-top {
+    height: 250px;
+  }
+}
+.image__col .card .card-body h6 {
+  color: #3c3d38;
+}
+
+.btn {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  background-color: #40704a !important;
+  color: #f8f8f8;
+}
+.btn:hover {
+  background-color: #5f902b !important;
+  color: #f8f8f8;
+}
+
+.myImg {
   cursor: pointer;
   transition: 0.3s;
 }
 @media screen and (max-width: 992px) {
-  .image__col .myImg {
+  .myImg {
     height: 310px;
   }
 }
-.image__col .myImg:hover {
+
+.myImg:hover {
   opacity: 0.7;
 }
-.image__col .modal {
+
+/* The Modal (background) */
+.modal {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -275,16 +323,22 @@ main img {
   background-color: rgba(0, 0, 0, 0.9);
   /* Black w/ opacity */
 }
-.image__col .modal-content {
+
+/* Modal Content (image) */
+.modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 400px;
 }
-.image__col .modal-content, .image__col .caption {
+
+/* Caption of Modal Image */
+/* Add Animation */
+.modal-content, .caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
 @keyframes zoom {
   from {
     transform: scale(0.1);
@@ -293,7 +347,8 @@ main img {
     transform: scale(1);
   }
 }
-.image__col .close {
+/* The Close Button */
+.close {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -302,26 +357,22 @@ main img {
   font-weight: bold;
   transition: 0.3s;
 }
-.image__col .close:hover,
-.image__col .close:focus {
+
+.close:hover,
+.close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
+
+/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-  .image__col .modal-content {
+  .modal-content {
     width: 100%;
   }
 }
-
-.image__col .card {
-  width: 250px;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1400px) and (min-width: 992px) {
-  .image__col .card .card-img-top {
-    height: 250px;
-  }
+.food__details {
+  text-align: left !important;
 }
 
 .food__header, .milktea__header, .hot-drinks__header {
@@ -344,12 +395,6 @@ footer li {
   padding: 0 !important;
 }
 
-@media screen and (max-width: 992px) {
-  .col__container {
-    text-align: center;
-  }
-}
-
 .footer__details {
   gap: 10rem;
 }
@@ -359,6 +404,15 @@ footer li {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    text-align: center;
   }
+}
+
+.inner {
+  height: 310px;
+}
+
+.inner:hover {
+  transform: scale(1.05);
+  transition: all 1.5s ease;
+  cursor: pointer;
 }

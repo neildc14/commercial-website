@@ -1,3 +1,19 @@
+//hide and show header 
+var scroll_position = 0;
+var last_scroll_position;
+var header = document.getElementById("header");
+
+window.addEventListener('scroll', function(e) {
+    last_scroll_position = window.scrollY;
+if (scroll_position < last_scroll_position && last_scroll_position > 60) {
+        header.classList.remove("slideDown");
+        header.classList.add("slideUp");
+    } else if (scroll_position > last_scroll_position) {
+        header.classList.remove("slideUp");
+        header.classList.add("slideDown");
+    };
+    scroll_position = last_scroll_position;
+})
 
 //slideshow
 var slideIndex = 0;

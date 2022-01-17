@@ -1,0 +1,14 @@
+.inner{
+    height: 310px;
+    // @include breakPoints(992px){
+    //     height: 310px;
+    //   }
+}
+.inner:hover{
+    transform: scale(1.05);
+    transition: all 1.5s ease;
+    cursor: pointer;
+    
+   
+}
+

@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/icons/logo.jpg">
-    <title>café.tea.ria | Coffee</title>
+    <title>café.tea.ria | Hot Drinks </title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="container-fluid">
+    <header id="header" class="container-fluid">
         <div class="navbar-brand text-center">
             <a href="../index.html" class="logo">café.tea.ria</a>
         </div>
@@ -75,9 +75,10 @@
                 <div class="row py-4">
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <img class="myImg card-img-top" src="../assets/images/hot drinks/1.jpg" onclick="zoomImg()" alt="Taro">
+                            <img class="inner card-img-top" src="../assets/images/hot drinks/1.jpg" onclick="zoomImg()" alt="Taro">
                             <div class="card-body">
                                 <h6>Taro</h6>
+                                <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
                             <div class="modal myModal">
                                 <span class="close">&times;</span>
@@ -88,9 +89,10 @@
                     </div>
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <img class="myImg card-img-top" src="../assets/images/hot drinks/2.jpg" onclick="zoomImg()" alt="CDark Choco">
+                            <img class="inner card-img-top" src="../assets/images/hot drinks/2.jpg" onclick="zoomImg()" alt="CDark Choco">
                             <div class="card-body">
                                 <h6>Dark Choco</h6>
+                                <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
                             <div class="modal myModal">
                                 <span class="close">&times;</span>
@@ -101,9 +103,10 @@
                     </div>
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <img class="myImg card-img-top" src="../assets/images/hot drinks/3.jpg" onclick="zoomImg()" alt="Choco">
+                            <img class="inner card-img-top" src="../assets/images/hot drinks/3.jpg" onclick="zoomImg()" alt="Choco">
                             <div class="card-body">
                                 <h6>Choco</h6>
+                                <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
                             <div class="modal myModal">
                                 <span class="close">&times;</span>
@@ -114,9 +117,10 @@
                     </div>
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <img class="myImg card-img-top" src="../assets/images/hot drinks/4.jpg" onclick="zoomImg()" alt="Matcha">
+                            <img class="inner card-img-top" src="../assets/images/hot drinks/4.jpg" onclick="zoomImg()" alt="Matcha">
                             <div class="card-body">
                                 <h6>Matcha</h6>
+                                <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
                             <div class="modal myModal">
                                 <span class="close">&times;</span>
@@ -127,9 +131,10 @@
                     </div>
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <img class="myImg card-img-top" src="../assets/images/hot drinks/5.jpg" onclick="zoomImg()" alt="Coffee">
+                            <img class="inner card-img-top" src="../assets/images/hot drinks/5.jpg" onclick="zoomImg()" alt="Coffee">
                             <div class="card-body">
                                 <h6>Coffee</h6>
+                                <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
                             <div class="modal myModal">
                                 <span class="close">&times;</span>
@@ -140,9 +145,10 @@
                     </div>
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <img class="myImg card-img-top" src="../assets/images/hot drinks/6.jpg" onclick="zoomImg()" alt="Mocha">
+                            <img class="inner card-img-top" src="../assets/images/hot drinks/6.jpg" onclick="zoomImg()" alt="Mocha">
                             <div class="card-body">
                                 <h6>Mocha</h6>
+                                <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
                             <div class="modal myModal">
                                 <span class="close">&times;</span>
@@ -153,9 +159,10 @@
                     </div>
                     <div class="image__col pb-4 col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <img class="myImg card-img-top" src="../assets/images/hot drinks/7.jpg" onclick="zoomImg()" alt="Choco Mattee">
+                            <img class="inner card-img-top" src="../assets/images/hot drinks/7.jpg" onclick="zoomImg()" alt="Choco Mattee">
                             <div class="card-body">
                                 <h6>White Mocha</h6>
+                                <a href="#" class="btn py-1 mt-2">Order</a>
                             </div>
                             <div class="modal myModal">
                                 <span class="close">&times;</span>
@@ -185,18 +192,9 @@
                                     href=" https://www.google.com/maps/dir/15.7792126,121.0220416/15.7883006,120.9904535/@15.7844956,120.9887209,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                                     36-42 Cardenas St, San Jose City, Nueva Ecija</a>
                                 </li>
+                                <li class="pt-1">Opens from 9:00am - 6pm</li>
                             </ul>
                         </div>            
-                        <div class="delivery">
-                            <h6>Delivery options</h6>
-                            <ul class="p-0">
-                                <li class="py-2"><a href=""><img src="../assets/icons/foodpanda.png" width="100" height="50" alt=""></a></li>
-                                <li class="py-1"><a href=""><img src="../assets/icons/grab.png" width="100" height="50" alt=""></a></li>
-                                <li class="py-1"><a href=""><img src="../assets/icons/hatid.png" width="100" height="50" alt=""></a></li>
-                                <li class="py-1"><a href="https://www.facebook.com/fastturtlesanjose/"><img src="../assets/icons/fast turtle.png" width="100" height="50" alt=""></a></li>
-                                <li class="py-1"><a href="https://www.facebook.com/ingkamannuevaE"><img src="../assets/icons/ingkaman.jpg" width="100" height="50" alt=""></a></li>
-                            </ul>
-                        </div>
                         <div class="social-media">
                             <h6>Social Media</h6>
                             <ul class="p-0">
@@ -208,9 +206,24 @@
                         </div> 
                     </div>  
                 </div>
+                <div class="col col-lg-12">
+                    <div class="delivery">
+                        <h6>Delivery options</h6>
+                        <ul class="p-0 d-flex flex-wrap">
+                            <li class="py-2 pe-2"><a href=""><img src="../assets/icons/foodpanda.png" width="100" height="50" alt="foodpanda food service"></a></li>
+                            <li class="py-1 pe-2"><a href=""><img src="../assets/icons/grab.png" width="100" height="50" alt="grab food service"></a></li>
+                            <li class="py-1  pe-2"><a href="https://www.facebook.com/hatid.Ph0130/"><img src="../assets/icons/hatid.png" width="100" height="50" alt="hati.ph food service"></a></li>
+                            <li class="py-1 pe-2"><a href="https://www.facebook.com/fastturtlesanjose/"><img src="../assets/icons/fast turtle.png" width="100" height="50" alt="fast turtle food service"></a></li>
+                            <li class="py-1 pe-2"><a href="https://www.facebook.com/ingkamannuevaE"><img src="../assets/icons/ingkaman.jpg" width="100" height="50" alt="ingkaman food service"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+    <span style="display:none">coded by neil edward dela cruz</span>
+
     <script>
         
     //page load transition smooth

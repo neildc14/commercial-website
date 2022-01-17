@@ -18,11 +18,11 @@ footer{
     }
 }
 
-.col__container{
-    @include breakPoints(992px){
-        text-align: center;
-    }
-}
+// .col__container{
+//     @include breakPoints(992px){
+//         text-align: center;
+//     }
+// }
 .footer__details{
     gap: 10rem;
 
@@ -31,6 +31,6 @@ footer{
         gap: 1rem;
         justify-content: center;
         align-items: center;
-        text-align: center;
+       
     }
 }

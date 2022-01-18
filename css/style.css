@@ -287,7 +287,7 @@ main img {
     height: 250px;
   }
 }
-.image__col .card .card-body h6 {
+.image__col .card .card-body h6, .image__col .card .card-body h5 {
   color: #3c3d38;
 }
 
@@ -337,12 +337,14 @@ footer li {
   }
 }
 
-.inner {
-  height: 310px;
+table th {
+  font-size: 13px;
+  font-weight: 600 !important;
+  color: #3c3d38;
 }
 
-.inner:hover {
-  transform: scale(1.05);
-  transition: all 1.5s ease;
-  cursor: pointer;
+.price {
+  font-size: 11px;
+  font-weight: 600;
+  color: #5e5d5d;
 }

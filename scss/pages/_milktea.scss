@@ -1,14 +1,13 @@
-.inner{
-    height: 310px;
-    // @include breakPoints(992px){
-    //     height: 310px;
-    //   }
-}
-.inner:hover{
-    transform: scale(1.05);
-    transition: all 1.5s ease;
-    cursor: pointer;
+table{
     
-   
+    th{
+        font-size: 13px;
+        font-weight:600 !important;
+        color: $kelp;
+    }
 }
-
+.price{
+    font-size: 11px;
+    font-weight: 600;
+    color: $scorpion;
+}

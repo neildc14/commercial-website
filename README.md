@@ -4,13 +4,4 @@ connect with the internet to see the best possible features.
 
 thank you!
 
-- neil's team
-
-
-MEMBERS
-
-leader: NEIL EDWARD DELA CRUZ
-RYAN FRANCISCO
-JERICHO A BARREDO
-
-IN FULLFILMENT OF THE FINAL PROJECT IN IT 105
+- neil

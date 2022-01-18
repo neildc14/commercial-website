@@ -41,6 +41,9 @@ nav{
     font-weight: 700;
     color: $scorpion !important;
     
+    @include breakPoints(992px){
+        font-size: 13px;
+    }
 }
 
 .nav-link:after {

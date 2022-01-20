@@ -5,3 +5,13 @@ connect with the internet to see the best possible features.
 thank you!
 
 - neil
+
+LEADER:
+NEIL EDWARD DELA CRUZ
+
+MEMBERS: 
+
+JERICHO BARREDO
+RYAN FRANCISCO
+
+BSIT3 B
